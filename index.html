@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        <div id="container" class="verd">
+    <div id= "flexbox">
+    <div id = "contingut">
+    <div id="Codificador_div">
+        <button id = "boto_cambiar">Cambia a descodificador</button>
+        <h1 id ="titulo_codificador">Codificador Cèsar</h1>
+    
+        <p id="text_codificar">Posa el teu text per codificar:</p>
+        <input type="text" id="input">
+        <p id ="clau_codificar">Posa la clau codificadora:</p>
+        <input type="text" id="clau_codificadora">
+        <br>
+        <br>
+        <button type="boto" id="boto_codificar">Codificar</button>
+        
+        <h2 id="Texto_codificado_titulo">Texto codificado: </h2>
+        <p id ="Texto_codificado"></p>
+    </div>
+    </div>
+    <div id="triacodificadors">
+    <select id="codificadors" name="codificadors">
+        <option value="cesar">Codificador Cèsar</option>
+        <option value="hill">Codificador Hill</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+</div>
+    </div id = "historial">
+
+        <h2 id="Historial">Historial: </h2>
+        <div id="historial_div"></div>
+        <div>
+        <button type="boto_petit" id="borrar_historial">Borrar_historial</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

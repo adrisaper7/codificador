@@ -1,0 +1,249 @@
+:root {
+    /* Definir colores principales y secundarios */
+    --main-color-green: #00ff00;   /* Color verde principal */
+    --secondary-color-green: #66ff66; /* Verde claro como secundario */
+
+    --main-color-red: #ff0000;     /* Color rojo principal */
+    --secondary-color-red: #ff6666; /* Rojo claro como secundario */
+
+    --main-color-blue: #007bff;    /* Color azul principal */
+    --secondary-color-blue: #6666ff; /* Azul claro como secundario */
+
+    --main-color-purple: #b19cd9;  /* Morado pastel principal */
+    --secondary-color-purple: #d8b7ff;  /* Amarillo claro como secundario */
+}
+
+#container.verd {
+    --main-color: var(--main-color-green);
+    --secondary-color: var(--secondary-color-green);
+}
+
+#container.vermell {
+    --main-color: var(--main-color-red);
+    --secondary-color: var(--secondary-color-red);
+}
+
+#container.blau {
+    --main-color: var(--main-color-blue);
+    --secondary-color: var(--secondary-color-blue);
+}
+
+#container.morat {
+    --main-color: var(--main-color-purple);
+    --secondary-color: var(--secondary-color-purple);
+}
+body {
+    font-family: 'Courier New', monospace; /* Fuente estilo consola */
+    background-color: #121212; /* Fondo oscuro */
+    color: var(--main-color); /* Texto verde, típico de estilo hacker */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--main-color); /* Color verde para el título */
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    color: var(--main-color); /* Texto verde */
+}
+
+input {
+    padding: 12px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid var(--main-color); /* Borde verde */
+    border-radius: 5px;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: var(--main-color); /* Texto verde */
+    font-size: 18px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px var(--main-color); /* Sombra verde */
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    background-color: #121212; /* Fondo oscuro al enfocar */
+    box-shadow: 0 8px 20px var(--main-color); /* Sombra más verde */
+}
+
+button {
+    background-color: var(--main-color); /* Verde brillante */
+    color: #121212; /* Texto oscuro */
+    border: 2px solid var(--main-color);
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px var(--main-color); /* Sombra verde */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #121212;
+    color: var(--main-color); /* Texto verde en hover */
+    transform: translateY(-4px); /* Levantamiento del botón */
+    box-shadow: 0 8px 20px var(--main-color); /* Sombra verde más pronunciada */
+}
+
+button:active {
+    background-color: #00cc00; /* Verde oscuro al hacer clic */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Estilo para el botón de borrar historial */
+#borrar_historial {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    color: #121212;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px var(--main-color);
+}
+
+#borrar_historial:hover {
+    background-color: #121212;
+    color: var(--main-color);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px var(--main-color);
+}
+
+#borrar_historial:active {
+    background-color: #00cc00;
+}
+
+
+
+#Texto_codificado {
+    font-size: 20px;
+    color: #FFFF00; /* Texto verde */
+    font-family: 'Courier New', monospace;
+    background-color: #010; /* Fondo oscuro */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--main-color);
+}
+
+.historial_texto {
+    font-size: 12px;
+    color: var(--main-color); /* Verde hacker */
+    margin: 0; /* Elimina el margen entre los elementos */
+    font-family: 'Courier New', monospace;
+    background-color: #010; /* Fondo oscuro */
+    padding: 3px 6px; /* Reducir el padding para menos espacio interno */
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0 4px 10px var(--main-color); /* Sombra verde */
+}
+
+#historial {
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos dentro de #flexbox estén en los extremos */
+    align-items: flex-start;
+    flex-direction: column; /* Alinea los elementos dentro de #historial en una columna */
+    justify-content: flex-start; /* Alinea los elementos al principio */
+    align-items: stretch; /* Los elementos se estiran para ocupar el espacio disponible */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    height: auto; /* Ajusta la altura según el contenido */
+    margin-top: 20px; /* Espacio entre el historial y otros elementos */
+}
+
+#resultat{
+    color: #FFFF00;
+    font-size: 12px;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #010; /* Fondo oscuro */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+#historial_div {
+    max-width: 100%; /* Limita el ancho al 100% de su contenedor padre */
+    width: 100%; /* Asegura que ocupe todo el espacio disponible */
+    height: 300px; /* Establece una altura fija (ajústalo según lo necesites) */
+    overflow-y: auto; /* Desplazamiento vertical si el contenido excede la altura */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal (ajústalo según lo necesites) */
+    background-color: #121212; /* Fondo oscuro */
+    padding: 10px;
+    border: 2px solid var(--main-color); /* Borde verde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px var(--main-color); /* Sombra verde */
+    color: var(--main-color); /* Texto verde */
+    font-family: 'Courier New', monospace;
+}
+
+#Descodificador_div{
+    display:none;
+}
+
+select {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: var(--main-color); /* Texto verde */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--main-color); /* Borde verde */
+    border-radius: 5px;
+    width: 200px; /* Ajusta el tamaño del dropdown */
+    box-shadow: 0 4px 10px var(--main-color); /* Sombra verde */
+    transition: all 0.3s ease; /* Efecto de transición */
+}
+
+/* Efectos al enfocar el dropdown */
+select:focus {
+    outline: none;
+    background-color: #121212; /* Fondo oscuro al enfocar */
+    box-shadow: 0 8px 20px var(--main-color); /* Sombra verde más pronunciada */
+}
+
+/* Contenedor Flexbox principal */
+#flexbox {
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos dentro de #flexbox estén en los extremos */
+    align-items: flex-start; /* Alinea los elementos al principio (parte superior) */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    height: 85v h; /* Ocupa toda la altura de la pantalla */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Contenedor central (contingut) */
+#contingut {
+    display: flex; /* Usamos flexbox para alinear su contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-grow: 1; /* Asegura que este contenedor ocupe el máximo espacio disponible */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Contenedor de codificadores (codificadors) */
+#codificadors {
+    position: absolute; /* Usamos posición absoluta para colocarlo en la parte superior derecha */
+    top: 10px; /* Coloca 10px desde la parte superior */
+    right: 10px; /* Coloca 10px desde la parte derecha */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+h2{
+    color : var(--main-color)
+}
